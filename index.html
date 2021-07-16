@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Hangman</title>
+ </head>
+  <body background>
+   <div id="title">Hangman</div>
+   <div id="subTittle">Add the word to be guessed</div>
+   <div id="winnText">You won the game &#127942</div>
+    <div id="lossText">Bad luck &#128549. Do you want to try again ?</div>
+    <h4 id ="message">
+    <h5 id="addText">Add the word that will be guessed</h5>
+    <div id="inputBox" style>
+    <input type="text" id="userInput"></input>
+    <button type="button" class="btn btn-outline-success" name="addWord" id="addWord" onclick="createGame();">Submit</button>
+   </div>
+   <button type = "button" class="btn btn-outline-dark" name="restart" id="restart" onclick="restartGame();">restart game</button>
+   <h6 id="wordInLines">
+   <h6 id="alphabet"></h6>
+   <div id="lifeCenter">
+    <h6 id="lifesLeft">
+    <h6 id="life">
+   </div>
+
+
+   <!--Script for jquery and bootstrap -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  <!--Script for buttons -->
+  <script src="script.js"></script>
+  </body>
+</html>
